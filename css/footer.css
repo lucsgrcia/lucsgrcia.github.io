@@ -1,3 +1,16 @@
+@media (prefers-color-scheme: dark) {
+  #introducao,
+  #experiencia {
+    background: white;
+  }
+  #formacao {
+    background: #141414;
+  }
+  #footer {
+    background: black;
+  }
+}
+
 .container.footer {
   padding: 120px 20px 60px 20px;
   margin: 0 auto;

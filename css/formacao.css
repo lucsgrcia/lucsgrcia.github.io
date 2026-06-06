@@ -3,6 +3,7 @@
   background: #141414;
   color: white;
   position: relative;
+  z-index: 3;
 }
 
 .container.formacao::after {
@@ -14,6 +15,7 @@
   position: absolute;
   bottom: -150px;
   left: 20px;
+  z-index: 4;
 }
 
 .formacao .subtitulo {
@@ -151,7 +153,7 @@
 
 .js-tabcontent section.ativo {
   display: block !important;
-  animation: show .5s forwards;
+  animation: show 0.5s forwards;
 }
 
 @keyframes show {

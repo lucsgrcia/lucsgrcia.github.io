@@ -8,7 +8,10 @@
       content="Desenvolvedor Front End & UX/UI Designer em formação, Goiânia"
     />
     <title>Lucas - Desenvolvedor & Designer</title>
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <script>
+      document.documentElement.className += " js";
+    </script>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +25,7 @@
     <header class="header">
       <img src="./img/nome.svg" alt="Lobo" width="279" height="40" />
       <nav>
-        <ul class="header-menu">
+        <ul class="header-menu js-tabmenu">
           <li><a href="#experiencia">Experiência</a></li>
           <li><a href="#formacao">Formação</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -30,7 +33,7 @@
       </nav>
     </header>
 
-    <main class="container introducao">
+    <main class="container introducao ">
       <img src="./img/perfil.jpg" alt="Lobo-img" width="360" height="520" />
 
       <div>
@@ -44,7 +47,7 @@
     </main>
 
     <section
-      class="container experiencia"
+      class="container experiencia js-tabcontent js-scroll"
       id="experiencia"
       aria-label="Experiência"
     >
@@ -91,7 +94,7 @@
       </div>
     </section>
 
-    <section class="formacao" id="formacao" aria-label="Formação">
+    <section class="formacao js-tabcontent js-scroll" id="formacao" aria-label="Formação">
       <div class="container formacao">
         <h2 class="subtitulo">Formação</h2>
 
@@ -136,7 +139,7 @@
       </div>
     </section>
 
-    <footer class="footer" id="contato">
+    <footer class="footer js-tabcontent js-scroll" id="contato">
       <div class="container footer">
         <p class="footer-texto">
           Estou disponível para novos projetos no momento. Entre em contato
@@ -156,5 +159,6 @@
         <p class="footer-copy">Lucas. Alguns direitos reservados.</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

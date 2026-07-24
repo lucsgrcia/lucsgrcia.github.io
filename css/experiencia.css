@@ -82,6 +82,26 @@
   padding: 5px 10px;
 }
 
+.empresa-links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.empresa-links a {
+  color: #141414;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #b6f829;
+  padding-bottom: 2px;
+}
+
+.empresa-links a:hover {
+  color: #67dd0a;
+}
+
 @media (max-width: 800px) {
   .experiencia {
     grid-template-columns: 1fr;
